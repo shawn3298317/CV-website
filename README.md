@@ -15,4 +15,4 @@ npm run dev
 npm run publish
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Website demo can be viewed at [Website-demo](https://shawn3298317.github.io/CV-website/docs/index.html)
