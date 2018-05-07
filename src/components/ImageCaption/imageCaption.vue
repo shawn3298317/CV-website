@@ -4,7 +4,7 @@
       <div class="ctnr-caption-holder">
         <h2 style="color: white; font-size: 1.5em; font-style:italic; font-family:adobe-garamond-pro;">{{captionGroup}}</h2>
         <h1 style="color: white; font-size: 2em; text-transform:uppercase; font-size:"><b>{{captionTitle}}</b></h1>
-        <button href="" class="white-button">WATCH PROJECT</button>
+        <button href="" class="caption-button">WATCH PROJECT</button>
       </div>
     </div>
     <div class="ctnr-mask" :style="styleSize">
@@ -104,7 +104,7 @@ export default {
     background-color: black;
   }
 
-  .white-button {
+  .caption-button {
     text-align: center;
     text-decoration: none;
     color: white;
@@ -113,7 +113,7 @@ export default {
     border-color: white;
     background-color: transparent;
     /*font-family: proxima-nova;*/
-    font-size: 0.8em !important;
+    font-size: 0.8em;
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
@@ -125,7 +125,7 @@ export default {
     margin-top: 10px;
   }
 
-  .white-button:hover {
+  .caption-button:hover {
     background-color: #fff;
     color: #000;
     transition: 0.1s background-color linear, 0.1s color linear;
@@ -134,7 +134,7 @@ export default {
     text-decoration: none;
   }
 
-  .white-button:focus {
+  .caption-button:focus {
     outline: none;
   }
 
