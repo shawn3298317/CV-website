@@ -4,8 +4,8 @@
     <annouceBar></annouceBar>
 
     <div class="nav-bar" style="overflow: hidden;">
-      <!-- <iframe id="player" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media" title="YouTube video player" width="560" height="315" src="https://www.youtube.com/embed/CJny8XlzcDU?autohide=1&amp;autoplay=1&amp;controls=0&amp;enablejsapi=1&amp;iv_load_policy=3&amp;loop=0&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;showinfo=0&amp;wmode=opaque&amp;origin=https%3A%2F%2Fwww.devonstank.com&amp;widgetid=1" class="background-video ready" style="width: 1310.22px; height: 737px; left: -17.1111px; top: 0px;"></iframe> -->
-      <img class="background-video2" src="../../../static/images/bg_video.jpeg" width="560" height="315" style="width: 1310.22px; height: 737px;">
+      <iframe id="player" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media" title="YouTube video player" width="560" height="315" src="https://www.youtube.com/embed/CJny8XlzcDU?autohide=1&amp;autoplay=1&amp;controls=0&amp;enablejsapi=1&amp;iv_load_policy=3&amp;loop=0&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;showinfo=0&amp;wmode=opaque&amp;origin=https%3A%2F%2Fwww.devonstank.com&amp;widgetid=1" class="background-video2 ready" style="width: 1310.22px; height: 737px;"></iframe>
+      <!-- <img class="background-video2" src="../../../static/images/bg_video.jpeg" width="560" height="315" style="width: 1310.22px; height: 737px;"> -->
 
       <navBar></navBar>
 
@@ -20,21 +20,21 @@
       <div class="project-bar-contents">
         <h2 style="font-size:42px; color: black; font-style:normal; font-family:adobe-garamond-pro; text-rendering: optimizeLegibility;"> These are my latest projects!! </h2>
         <div class="project-items">
-          <imgCaption :projectId="0" :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/5a2b520a652dea32996c6415/1512788496834/squarespace-photographer-website-project.jpg'" :imgWidth="280" :imgHeight="280" :captionGroup="'NaturalLanguageProcessing'" :captionTitle="'Amap Learning2Rank'">
+          <imgCaption :projectId="0" :imgSrc="'@/../static/images/thumbnail/thumbnail-amap.001.jpeg'" :imgWidth="280" :imgHeight="280" :captionGroup="'NaturalLanguageProcessing'" :captionTitle="'Amap Learning2Rank'">
           </imgCaption>
 
-          <imgCaption :projectId="1" :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/584598f9d1758ec839a47e61/1512788537207/Squarespace+Personal+Brand+Website+Project?format=750w'" :imgWidth="280" :imgHeight="280" :captionGroup="'NaturalLanguageProcessing'" :captionTitle="'Her - Office Assistant Dialogue System'">
+          <imgCaption :projectId="1" :imgSrc="'@/../static/images/thumbnail/thumbnail-her.png'" :imgWidth="280" :imgHeight="280" :captionGroup="'NaturalLanguageProcessing'" :captionTitle="'Her - Office Assistant Dialogue System'">
           </imgCaption>
 
-          <imgCaption :projectId="99" :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/584598f9d1758ec839a47e61/1512788537207/Squarespace+Personal+Brand+Website+Project?format=750w'" :imgWidth="280" :imgHeight="280" :captionGroup="'Robotics/CV'" :captionTitle="'D-SPURS'">
+          <imgCaption :projectId="99" :imgSrc="'@/../static/images/thumbnail/thumbnail-DSPUR.png'" :imgWidth="280" :imgHeight="280" :captionGroup="'Robotics/CV'" :captionTitle="'D-SPURS'">
           </imgCaption>
 
-          <imgCaption :projectId="100" :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/5a2b51a50d9297be55ef560b/1512788410501/Squarespace+Trucking+Website+Project?format=750w'" :imgWidth="280" :imgHeight="280" :captionGroup="'Robotics/CV'" :captionTitle="'AlphaBot'">
+          <imgCaption :projectId="100" :imgSrc="'@/../static/images/thumbnail/thumbnail-alphabot.png'" :imgWidth="280" :imgHeight="280" :captionGroup="'Robotics/CV'" :captionTitle="'AlphaBot'">
           </imgCaption>
 
         </div>
         <div class="btn-container">
-          <button href="" class="black-button">VIEW MORE PROJECTS</button>
+        <router-link tag="button" :to="{name: 'portfolio', params: {}}" class="black-button">WATCH PROJECT</router-link>
         </div>
       </div>
     </div>

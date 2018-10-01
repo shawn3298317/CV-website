@@ -1,6 +1,6 @@
 <template>
     <div class="carousel-cntnr">
-    <div @mouseover="hoverImage = true" @mouseleave="hoverImage = false" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <div @mouseover="hoverImage = true" @mouseleave="hoverImage = true" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
       <div class="carousel-inner" >
         <div :class="'carousel-item '+isFirstImage(index)" v-for="(item, index) in images">
             <img class="d-block w-100 carousel-image" height="350" :src="'@/../static/images/wix/'+item.src" alt="First slide">
@@ -45,7 +45,7 @@ export default {
   data () {
     return {
         'processedImages': this.doProcessImages(),
-        'hoverImage': false
+        'hoverImage': true
     }
   },
   methods: {
