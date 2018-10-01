@@ -1,0 +1,62 @@
+{
+	"0": {
+		"projectGroup": "NLP",
+		"projectName": "Amap Learning2Rank",
+		"intro": "Here are 2 sentences of introduction for this project.This is the first sentence, blah blah blah. And this is the second sentence. Yeah!",
+		"info": {
+			"pics": [],
+			"summary": [
+				"point 1: xxxxxxxxxxxxxxxxxxxx",
+				"point 2: xxxxxxxxxxxxxxxxxxxx",
+				"point 3: xxxxxxxxxxxxxxxxxxxx",
+				"point 4: xxxxxxxxxxxxxxxxxxxx"
+			]
+		}
+	},
+
+	"1": {
+		"projectGroup": "NLP",
+		"projectName": "Her",
+		"intro": "Here are 2 sentences of introduction for this project.",
+		"info": {
+			"pics": [],
+			"summary": [
+				"point 1: xxxxxxxxxxxxxxxxxxxx",
+				"point 2: xxxxxxxxxxxxxxxxxxxx",
+				"point 3: xxxxxxxxxxxxxxxxxxxx",
+				"point 4: xxxxxxxxxxxxxxxxxxxx"
+			]
+		}
+	},
+
+	"2": {
+		"projectGroup": "NLP",
+		"projectName": "Retail Burst Detection",
+		"intro": "Here are 2 sentences of introduction for this project.",
+		"info": {
+			"pics": [],
+			"summary": [
+				"point 1: xxxxxxxxxxxxxxxxxxxx",
+				"point 2: xxxxxxxxxxxxxxxxxxxx",
+				"point 3: xxxxxxxxxxxxxxxxxxxx",
+				"point 4: xxxxxxxxxxxxxxxxxxxx"
+			]
+		}
+	},
+
+	"100": {
+		"projectGroup": "Robotics/CV",
+		"projectName": "AlphaBot",
+		"intro": "Here are 2 sentences of introduction for this project. This is the first sentence, blah blah blah. And this is the second sentence. Yeah!",
+		"info": {
+			"pics": [],
+			"summary": [
+				"point 1: xxxxxxxxxxxxxxxxxxxx",
+				"point 2: xxxxxxxxxxxxxxxxxxxx",
+				"point 3: xxxxxxxxxxxxxxxxxxxx",
+				"point 4: xxxxxxxxxxxxxxxxxxxx"
+			],
+			"video": "https://www.youtube.com/embed/395eBJpKtUE"
+		}
+	}
+}
