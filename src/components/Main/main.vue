@@ -1,38 +1,13 @@
 <template>
   <div class="main">
-    <div class="announcement-bar">
-      <div class="announcement-bar-text">
-        <p></p>
-        <p>If you haven't already, check out my latest Vlog episode (EP09 - Get Out Of The Office).
-          <a target="_blank" href="https://youtu.be/QmNHsJgs9kQ">Watch Video</a>
-        </p>
-      </div>
-    </div>
+
+    <annouceBar></annouceBar>
 
     <div class="nav-bar" style="overflow: hidden;">
       <!-- <iframe id="player" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media" title="YouTube video player" width="560" height="315" src="https://www.youtube.com/embed/CJny8XlzcDU?autohide=1&amp;autoplay=1&amp;controls=0&amp;enablejsapi=1&amp;iv_load_policy=3&amp;loop=0&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;showinfo=0&amp;wmode=opaque&amp;origin=https%3A%2F%2Fwww.devonstank.com&amp;widgetid=1" class="background-video ready" style="width: 1310.22px; height: 737px; left: -17.1111px; top: 0px;"></iframe> -->
       <img class="background-video2" src="../../../static/images/bg_video.jpeg" width="560" height="315" style="width: 1310.22px; height: 737px;">
 
-      <div class="nav-bar-items">
-        <div class="nav-bar-name-icon">
-          <a href="/" class="name-icon">
-            <img src="../../../static/images/name_icon.png" alt="shawn3298317.com">
-          </a>
-        </div>
-        <div class="nav-bar-links">
-          <nav>
-            <div class="nav-bar-links-inner">
-              <a class="" href="">Home</a>
-              <a href="">Code Shop</a>
-              <a href="">Portfolio</a>
-              <a href="">About</a>
-              <a href="">Resume</a>
-              <a href="">Blog</a>
-              <a href="">Contact</a>
-            </div>
-          </nav>
-        </div>
-      </div>
+      <navBar></navBar>
 
       <div class="nav-intro" style="margin-top: 164px">
         <h2 style="color: white; font-style:italic; font-family:adobe-garamond-pro;">I'm here to build best chatbots!!!</h2>
@@ -43,26 +18,17 @@
 
     <div class="project-bar">
       <div class="project-bar-contents">
-        <h2 style="font-size:42px; color: black; font-style:normal; font-family:adobe-garamond-pro; text-rendering: optimizeLegibility;"> These are my projects!! </h2>
+        <h2 style="font-size:42px; color: black; font-style:normal; font-family:adobe-garamond-pro; text-rendering: optimizeLegibility;"> These are my latest projects!! </h2>
         <div class="project-items">
-          <imgCaption :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/5a2b520a652dea32996c6415/1512788496834/squarespace-photographer-website-project.jpg'" :imgWidth="350" :imgHeight="350" :captionGroup="'Project Group'" :captionTitle="'Tensorflow'">
+          <imgCaption :projectId="0" :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/5a2b520a652dea32996c6415/1512788496834/squarespace-photographer-website-project.jpg'" :imgWidth="350" :imgHeight="350" :captionGroup="'NaturalLanguageProcessing'" :captionTitle="'Amap Learning2Rank'">
           </imgCaption>
 
-          <imgCaption :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/584598f9d1758ec839a47e61/1512788537207/Squarespace+Personal+Brand+Website+Project?format=750w'" :imgWidth="350" :imgHeight="350" :captionGroup="'Project Group'" :captionTitle="'Tensorflow'">
+          <imgCaption :projectId="1" :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/584598f9d1758ec839a47e61/1512788537207/Squarespace+Personal+Brand+Website+Project?format=750w'" :imgWidth="350" :imgHeight="350" :captionGroup="'NaturalLanguageProcessing'" :captionTitle="'Her - Office Assistant Dialogue System'">
           </imgCaption>
 
-          <imgCaption :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/5a2b51a50d9297be55ef560b/1512788410501/Squarespace+Trucking+Website+Project?format=750w'" :imgWidth="350" :imgHeight="350" :captionGroup="'Project Group'" :captionTitle="'Tensorflow'">
+          <imgCaption :projectId="100" :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/5a2b51a50d9297be55ef560b/1512788410501/Squarespace+Trucking+Website+Project?format=750w'" :imgWidth="350" :imgHeight="350" :captionGroup="'Robotics/CV'" :captionTitle="'AlphaBot'">
           </imgCaption>
 
-          <!-- <div class="project-items-img">
-              <img width="600" height="600" src="https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/5a2b520a652dea32996c6415/1512788496834/squarespace-photographer-website-project.jpg">
-          </div>
-          <div class="project-items-img">
-            <img width="600" height="600" src="https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/584598f9d1758ec839a47e61/1512788537207/Squarespace+Personal+Brand+Website+Project?format=750w">
-          </div>
-          <div class="project-items-img">
-            <img width="600" height="600" src="https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/5a2b51a50d9297be55ef560b/1512788410501/Squarespace+Trucking+Website+Project?format=750w">
-          </div> -->
         </div>
         <div class="btn-container">
           <button href="" class="black-button">VIEW MORE PROJECTS</button>
@@ -77,11 +43,15 @@
 <script>
 
 import imgCaption from '@/components/ImageCaption/imageCaption'
+import annouceBar from '@/components/Main/annouceBar'
+import navBar from '@/components/Main/navBar'
 
 export default {
   name: 'main',
   components: {
-    imgCaption
+    imgCaption,
+    annouceBar,
+    navBar
   },
   methods: {
     changeNavView (e) {
@@ -96,17 +66,6 @@ export default {
 
 #main {
   position: relative;
-}
-#announce-bar {
-  /*background-color: transparent;*/
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-top: 25px;
-}
-
-#annouce-bar-text p {
-  font-size: 15px;
 }
 
 #nav-bar {
@@ -130,78 +89,6 @@ export default {
   /*width: 100%;*/
   opacity: 1;
   overflow: hidden;
-}
-
-.nav-bar-items {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /*flex: 1 1 auto;*/
-  position: absolute;
-  top: 40px;
-  left: 0;
-  width: 100%;
-  /*-webkit-box-flex: 1;*/
-  /*-ms-flex: 1 1 auto;*/
-  /*-webkit-flex: 1 1 auto;*/
-}
-
-.nav-bar-name-icon {
-  /*margin-left: auto;*/
-  /*position: relative;*/
-  /*top: 0;*/
-  /*left: 0;*/
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 50px;
-  text-align: left;
-  width: auto;
-}
-
-.nav-bar-links {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 50px;
-  vertical-align: center;
-}
-
-.nav-bar-links-inner {
-  display: flex;
-  flex: 1 1 auto;
-  align-items: center;
-}
-
-.nav-bar-links-inner a {
-  color: white;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 13px;
-  letter-spacing: .15em;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  margin-left: 2em;
-  margin-right: 2em;
-  text-decoration: none;
-  transition: opacity 0.3s linear;
-}
-
-.nav-bar-links-inner:hover > a {
-  opacity: 0.5;
-  transition: opacity 0.3s linear;
-}
-
-.nav-bar-links .nav-bar-links-inner > a:hover{
-  opacity: 1.0;
-}
-
-.nav-intro {
-  position: absolute;
-  top: 115px;
-  left: 15%;
-  width: 70%;
-  text-align: center;
-  z-index: 1;
 }
 
 .btn_container {

@@ -3,8 +3,11 @@
     <div class="ctnr-caption" :style="styleSize">
       <div class="ctnr-caption-holder">
         <h2 style="color: white; font-size: 1.5em; font-style:italic; font-family:adobe-garamond-pro;">{{captionGroup}}</h2>
-        <h1 style="color: white; font-size: 2em; text-transform:uppercase; font-size:"><b>{{captionTitle}}</b></h1>
-        <button href="" class="caption-button">WATCH PROJECT</button>
+        <!-- <h1 style="color: white; font-size: 2em; text-transform:uppercase; font-size:"><b>{{captionTitle}}</b></h1> -->
+        <h1 style="color: white; font-size: 2em; font-size:"><b>{{captionTitle}}</b></h1>
+        <!-- <button class="caption-button">WATCH PROJECT</button> -->
+        <!-- <router-link tag="button" :to="'/project/' + projectId" class="caption-button">WATCH PROJECT</router-link> -->
+        <router-link tag="button" :to="{name: 'project', params: { project_id: projectId}}" class="caption-button">WATCH PROJECT</router-link>
       </div>
     </div>
     <div class="ctnr-mask" :style="styleSize">
@@ -36,6 +39,9 @@ export default {
     captionTitle: {
       type: String,
       default: 'Project Title'
+    },
+    projectId: {
+      type: String
     }
   },
   data () {
