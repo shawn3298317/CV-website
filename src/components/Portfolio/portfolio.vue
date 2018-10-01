@@ -14,7 +14,7 @@
       <h2 style="font-size:42px; text-decoration: underline; color: black; font-style:normal; font-family:'Cormorant Garamond'; text-rendering: optimizeLegibility;"> Projects </h2>
 
       <div class="project-items" v-for="projects in project_infos" :key="projects.id">
-        <imgCaption v-for="item in projects" :key="item.id" :projectId="item.pid" :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/5a2b520a652dea32996c6415/1512788496834/squarespace-photographer-website-project.jpg'" :imgWidth="280" :imgHeight="280" :captionGroup="item.obj.projectGroup" :captionTitle="item.obj.projectName" :animationType="1">
+        <imgCaption v-for="item in projects" :key="item.id" :projectId="item.pid" :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/5a2b520a652dea32996c6415/1512788496834/squarespace-photographer-website-project.jpg'" :imgWidth="280" :imgHeight="280" :captionGroup="item.obj.projectGroup" :captionTitle="item.obj.projectName" :animationType="0">
         </imgCaption>
       </div>
 

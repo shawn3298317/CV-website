@@ -99,8 +99,8 @@ export default {
     left: 0;
     z-index: 2;
     background-color: transparent;
-    visibility: hidden;
-    opacity: 0;
+    visibility: visible;
+    opacity: 1.0;
   }
 
   .ctnr:hover .ctnr-caption {
@@ -139,11 +139,12 @@ export default {
     /*width: 350px;
     height: 350px;*/
     z-index: 1;
-    background-color: transparent;
+    opacity: 0.55;
+    background-color: black;
   }
 
   .ctnr:hover .ctnr-mask {
-    opacity: 0.65;
+    opacity: 0.35;
     transition: .5s opacity ease-in-out, .5s background-color ease-in-out;
     background-color: black;
   }
