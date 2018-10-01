@@ -1,13 +1,13 @@
 <template>
   <div class="ctnr" :style="styleSize">
-    <div class="ctnr-caption" :style="styleSize">
+    <div :class="getClassByAnimationType()" :style="styleSize">
       <div class="ctnr-caption-holder">
         <h2 style="color: white; font-size: 1.5em; font-style:italic; font-family:adobe-garamond-pro;">{{captionGroup}}</h2>
         <!-- <h1 style="color: white; font-size: 2em; text-transform:uppercase; font-size:"><b>{{captionTitle}}</b></h1> -->
         <h1 style="color: white; font-size: 2em; font-size:"><b>{{captionTitle}}</b></h1>
         <!-- <button class="caption-button">WATCH PROJECT</button> -->
         <!-- <router-link tag="button" :to="'/project/' + projectId" class="caption-button">WATCH PROJECT</router-link> -->
-        <router-link tag="button" :to="{name: 'project', params: { project_id: projectId}}" class="caption-button">WATCH PROJECT</router-link>
+        <router-link tag="button" :to="{name: 'project', params: {project_id: projectId}}" class="caption-button">WATCH PROJECT</router-link>
       </div>
     </div>
     <div class="ctnr-mask" :style="styleSize">
@@ -42,6 +42,10 @@ export default {
     },
     projectId: {
       type: String
+    },
+    animationType: {
+      type: Number,
+      default: 0
     }
   },
   data () {
@@ -52,12 +56,24 @@ export default {
         'max-height': String(this.imgHeight) + 'px',
         'width': String(this.imgWidth) + 'px',
         'height': String(this.imgHeight) + 'px'
-      }
+      },
+      test: this.testProps()
     }
   },
   components: {
   },
   methods: {
+    testProps () {
+      console.log(this.projectId)
+      console.log(this.captionTitle)
+      return true
+    },
+    getClassByAnimationType () {
+      if (this.animationType == 0) {
+        return 'ctnr-caption'
+      }
+      return 'ctnr-caption-1'
+    }
   }
 }
 </script>
@@ -92,6 +108,28 @@ export default {
     transition: .5s opacity linear, .3s transform linear;
     opacity: 1.0;
     transform: translateY(5px);
+  }
+
+  .ctnr-caption-1 {
+    /*width: 350px;*/
+    /*height: 350px;*/
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background-color: transparent;
+    visibility: visible;
+    opacity: 0.5;
+  }
+
+  .ctnr:hover .ctnr-caption-1 {
+    /*visibility: visible;*/
+    transition: .5s opacity linear;
+    opacity: 1.0;
+    /*transform: translateY(5px);*/
   }
 
   .ctnr-mask {

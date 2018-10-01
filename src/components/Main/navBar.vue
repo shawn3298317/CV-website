@@ -11,11 +11,10 @@
         <div class="nav-bar-links">
           <nav>
             <div :class="'nav-bar-links-inner-' + colorTheme">
-              <a class="" href="">Home</a>
-              <a href="">Resume/CV</a>
-              <a href="">About</a>
-              <a href="">Portfolio</a>
-              <a href="">Contact</a>
+              <router-link tag="a" :to="{name: 'main'}">Home</router-link>
+              <router-link tag="a" :to="{name: 'main'}">Resume/CV</router-link>
+              <router-link tag="a" :to="{name: 'portfolio'}">Portfolio</router-link>
+              <router-link tag="a" :to="{name: 'main'}">Contact</router-link>
             </div>
           </nav>
         </div>
@@ -24,9 +23,12 @@
 
 <script>
 
+// import Portfolio from '@/components/Portfolio/portfolio'
+
 export default {
   name: 'nav-bar',
   components: {
+    // Portfolio
   },
   props: {
     colorTheme: {
@@ -98,6 +100,8 @@ export default {
 }
 
 .nav-bar-links-inner-dark:hover > a {
+  color: white;
+  text-decoration: none;
   opacity: 0.5;
   transition: opacity 0.3s linear;
 }
@@ -128,6 +132,8 @@ export default {
 }
 
 .nav-bar-links-inner-light:hover > a {
+  color: black;
+  /*text-decoration: none;*/
   opacity: 0.5;
   transition: opacity 0.3s linear;
 }

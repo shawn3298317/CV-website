@@ -1,6 +1,6 @@
 {
 	"0": {
-		"projectGroup": "NLP",
+		"projectGroup": "NaturalLanguageProcessing",
 		"projectName": "Amap Learning2Rank",
 		"intro": "Here are 2 sentences of introduction for this project.This is the first sentence, blah blah blah. And this is the second sentence. Yeah!",
 		"info": {
@@ -15,8 +15,8 @@
 	},
 
 	"1": {
-		"projectGroup": "NLP",
-		"projectName": "Her",
+		"projectGroup": "NaturalLanguageProcessing",
+		"projectName": "Her - Office Assistant Dialogue System",
 		"intro": "Here are 2 sentences of introduction for this project.",
 		"info": {
 			"pics": [],
@@ -30,7 +30,7 @@
 	},
 
 	"2": {
-		"projectGroup": "NLP",
+		"projectGroup": "NaturalLanguageProcessing",
 		"projectName": "Retail Burst Detection",
 		"intro": "Here are 2 sentences of introduction for this project.",
 		"info": {
@@ -41,6 +41,121 @@
 				"point 3: xxxxxxxxxxxxxxxxxxxx",
 				"point 4: xxxxxxxxxxxxxxxxxxxx"
 			]
+		}
+	},
+
+	"3": {
+		"projectGroup": "NaturalLanguageProcessing",
+		"projectName": "Stock Forum Sentiment Analyis System",
+		"intro": "Here are 2 sentences of introduction for this project.",
+		"info": {
+			"pics": [],
+			"summary": [
+				"point 1: xxxxxxxxxxxxxxxxxxxx",
+				"point 2: xxxxxxxxxxxxxxxxxxxx",
+				"point 3: xxxxxxxxxxxxxxxxxxxx",
+				"point 4: xxxxxxxxxxxxxxxxxxxx"
+			]
+		}
+	},
+
+	"4": {
+		"projectGroup": "NaturalLanguageProcessing",
+		"projectName": "PineappleCake - Deep Learning NLP Toolkit",
+		"intro": "Here are 2 sentences of introduction for this project.",
+		"info": {
+			"pics": [],
+			"summary": [
+				"point 1: xxxxxxxxxxxxxxxxxxxx",
+				"point 2: xxxxxxxxxxxxxxxxxxxx",
+				"point 3: xxxxxxxxxxxxxxxxxxxx",
+				"point 4: xxxxxxxxxxxxxxxxxxxx"
+			]
+		}
+	},
+
+	"5": {
+		"projectGroup": "NaturalLanguageProcessing",
+		"projectName": "Xinya - Love Song Lyrics Generator",
+		"intro": "Here are 2 sentences of introduction for this project.",
+		"info": {
+			"pics": [],
+			"summary": [
+				"point 1: xxxxxxxxxxxxxxxxxxxx",
+				"point 2: xxxxxxxxxxxxxxxxxxxx",
+				"point 3: xxxxxxxxxxxxxxxxxxxx",
+				"point 4: xxxxxxxxxxxxxxxxxxxx"
+			]
+		}
+	},
+
+
+	"98": {
+		"projectGroup": "DistributedSystem/IC-Design",
+		"projectName": "Map/Reduce FPGA Accelerator",
+		"intro": "Here are 2 sentences of introduction for this project.",
+		"info": {
+			"pics": [],
+			"summary": [
+				"point 1: xxxxxxxxxxxxxxxxxxxx",
+				"point 2: xxxxxxxxxxxxxxxxxxxx",
+				"point 3: xxxxxxxxxxxxxxxxxxxx",
+				"point 4: xxxxxxxxxxxxxxxxxxxx"
+			]
+		}
+	},
+
+	"99": {
+		"projectGroup": "Robotics/CV",
+		"projectName": "D-SPUR",
+		"intro": "Here are 2 sentences of introduction for this project. This is the first sentence, blah blah blah. And this is the second sentence. Yeah!",
+		"info": {
+			"pics": [
+				{
+					"src": "a266b8_3b138f3a9bf841888e5ad1027be887df_mv2.jpg",
+					"caption": "NVIDIA TK1 GPU Board"
+				},
+				{
+					"src": "a266b8_142d80509e004eb295b2790c2b2d185e_mv2.jpg",
+					"caption": "D-SPUR Robot Vehicle"
+				},
+				
+				{
+					"src": "a266b8_b0ab5b6fea414660941c020bf1152505_mv2.jpg",
+					"caption": "Robot Arm - Inverse Kinematics"
+				},
+				{
+					"src": "a266b8_bc0d8e5e04fc4cad883b74fbd6d18d88_mv2.jpg",
+					"caption": "CIFAR-10 Realtime Image Recognition"
+				},
+				{
+					"src": "a266b8_ce6ae142a14246f384fa26ca995e444d_mv2_d_2534.jpg",
+					"caption": "SLAM via Kinect"
+				},
+				{
+					"src": "IMG_0816.jpg",
+					"caption": "Omni-direction Wheels"
+				},
+				{
+					"src": "IMG_0888.jpg",
+					"caption": "Autonomous Driving"
+				},
+				{
+					"src": "a266b8_32c6333bc4d04b318890f2b016339f43_mv2_d_2058.jpg",
+					"caption": "Door Knob Detection"
+				},
+				{
+					"src": "a266b8_a234a24671034f4ebd92f5f1b31b6d20_mv2_d_2532.jpg",
+					"caption": "Lane Detection Algorithm"
+				}
+			],
+			"summary": [
+				"point 1: xxxxxxxxxxxxxxxxxxxx",
+				"point 2: xxxxxxxxxxxxxxxxxxxx",
+				"point 3: xxxxxxxxxxxxxxxxxxxx",
+				"point 4: xxxxxxxxxxxxxxxxxxxx"
+			],
+			"video": "https://www.youtube.com/embed/K7LFNr44Vyg"
 		}
 	},
 
@@ -57,6 +172,21 @@
 				"point 4: xxxxxxxxxxxxxxxxxxxx"
 			],
 			"video": "https://www.youtube.com/embed/395eBJpKtUE"
+		}
+	},
+
+	"101": {
+		"projectGroup": "SpeechRecognition",
+		"projectName": "Improving RNN-Language-Model Leveraging Common Sense Knowledge",
+		"intro": "Here are 2 sentences of introduction for this project. This is the first sentence, blah blah blah. And this is the second sentence. Yeah!",
+		"info": {
+			"pics": [],
+			"summary": [
+				"point 1: xxxxxxxxxxxxxxxxxxxx",
+				"point 2: xxxxxxxxxxxxxxxxxxxx",
+				"point 3: xxxxxxxxxxxxxxxxxxxx",
+				"point 4: xxxxxxxxxxxxxxxxxxxx"
+			]
 		}
 	}
 }

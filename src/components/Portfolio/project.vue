@@ -8,15 +8,18 @@
       <div class="project-ctnr-pd">
         <!-- <div class="spacer-block"/> -->
 
-          <h2 class="project-title"> {{project_info.projectName}}</h2>
-          <h2 class="project-intro">{{project_info.intro}}</h2>
-          <!-- <button href="" class="black-button">WATCH VIDEO</button> -->
+        <h2 class="project-title"> {{project_info.projectName}}</h2>
+        <h2 class="project-intro">{{project_info.intro}}</h2>
+        <!-- <button href="" class="black-button">WATCH VIDEO</button> -->
+        
 
-          <iframe class="project-video" v-if="hasProjectVideo()" width="560" height="315" :src="project_info.info.video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe class="project-video" v-if="hasProjectVideo()" width="560" height="400" :src="project_info.info.video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-          <ul style="position: relative; top: 50px;">
-            <li class="project-summary-item" v-for="item in project_info.info.summary">{{item}}</li>
-          </ul>
+        <imageCarousel v-if="hasProjectImages()" :images="project_info.info.pics"></imageCarousel>
+
+        <ul style="position: relative; top: 50px;">
+          <li class="project-summary-item" v-for="item in project_info.info.summary">{{item}}</li>
+        </ul>
 
       </div>
     </div>
@@ -30,13 +33,15 @@
 import imgCaption from '@/components/ImageCaption/imageCaption'
 import annouceBar from '@/components/Main/annouceBar'
 import navBar from '@/components/Main/navBar'
+import imageCarousel from '@/components/ImageCaption/imageCarousel'
 
 export default {
   name: 'project',
   components: {
     imgCaption,
     annouceBar,
-    navBar
+    navBar,
+    imageCarousel
   },
   methods: {
     getProjectInfoFromAsset () {
@@ -56,8 +61,16 @@ export default {
     hasProjectVideo () {
       console.log("has Project video")
       console.log('video' in this.project_info.info)
-      if ('video' in this.project_info.info)
+      if ('video' in this.project_info.info) {
         return true
+      }
+      return false
+    },
+    hasProjectImages () {
+      console.log("has Project Images")
+      if (this.project_info.info.pics.length > 0) {
+        return true
+      }
       return false
     }
   },

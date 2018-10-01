@@ -20,13 +20,16 @@
       <div class="project-bar-contents">
         <h2 style="font-size:42px; color: black; font-style:normal; font-family:adobe-garamond-pro; text-rendering: optimizeLegibility;"> These are my latest projects!! </h2>
         <div class="project-items">
-          <imgCaption :projectId="0" :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/5a2b520a652dea32996c6415/1512788496834/squarespace-photographer-website-project.jpg'" :imgWidth="350" :imgHeight="350" :captionGroup="'NaturalLanguageProcessing'" :captionTitle="'Amap Learning2Rank'">
+          <imgCaption :projectId="0" :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/5a2b520a652dea32996c6415/1512788496834/squarespace-photographer-website-project.jpg'" :imgWidth="280" :imgHeight="280" :captionGroup="'NaturalLanguageProcessing'" :captionTitle="'Amap Learning2Rank'">
           </imgCaption>
 
-          <imgCaption :projectId="1" :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/584598f9d1758ec839a47e61/1512788537207/Squarespace+Personal+Brand+Website+Project?format=750w'" :imgWidth="350" :imgHeight="350" :captionGroup="'NaturalLanguageProcessing'" :captionTitle="'Her - Office Assistant Dialogue System'">
+          <imgCaption :projectId="1" :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/584598f9d1758ec839a47e61/1512788537207/Squarespace+Personal+Brand+Website+Project?format=750w'" :imgWidth="280" :imgHeight="280" :captionGroup="'NaturalLanguageProcessing'" :captionTitle="'Her - Office Assistant Dialogue System'">
           </imgCaption>
 
-          <imgCaption :projectId="100" :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/5a2b51a50d9297be55ef560b/1512788410501/Squarespace+Trucking+Website+Project?format=750w'" :imgWidth="350" :imgHeight="350" :captionGroup="'Robotics/CV'" :captionTitle="'AlphaBot'">
+          <imgCaption :projectId="99" :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/584598f9d1758ec839a47e61/1512788537207/Squarespace+Personal+Brand+Website+Project?format=750w'" :imgWidth="280" :imgHeight="280" :captionGroup="'Robotics/CV'" :captionTitle="'D-SPURS'">
+          </imgCaption>
+
+          <imgCaption :projectId="100" :imgSrc="'https://static1.squarespace.com/static/5300d507e4b0fa8137bdc65d/t/5a2b51a50d9297be55ef560b/1512788410501/Squarespace+Trucking+Website+Project?format=750w'" :imgWidth="280" :imgHeight="280" :captionGroup="'Robotics/CV'" :captionTitle="'AlphaBot'">
           </imgCaption>
 
         </div>
@@ -185,49 +188,9 @@ export default {
 
 .project-items{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 25px;
   position: relative;
-}
-
-.project-items-img {
-  /*width: auto;*/
-  /*height: auto;*/
-  position: relative;
-  /*left: 0;*/
-  /*top: 0;*/
-  /*left: */
-  width: auto;
-  height: auto;
-  z-index: 100;
-  /*width: 100%;*/
-  height: auto;
-  background-color: black;
-  opacity: 1;
-}
-
-.project-items-img:hover {
-  position: relative;
-  /*left: 0;*/
-  /*top: 0;*/
-  /*left: */
-  /*width: auto;*/
-  /*height: auto;*/
-  z-index: 100;
-  /*width: 100%;*/
-  /*height: auto;*/
-  background-color: black;
-  opacity: 0.8;
-}
-
-.project-items-img img{
-  float: left;
-  text-align: center;
-  max-width: 350px;
-  max-height: 350px;
-  z-index: -1;
-  /*visibility: hidden;*/
-  /*overflow: hidden;*/
 }
 
 </style>
