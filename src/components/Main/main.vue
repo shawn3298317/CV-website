@@ -4,13 +4,13 @@
     <annouceBar></annouceBar>
 
     <div class="nav-bar" style="overflow: hidden;">
-      <iframe id="player" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media" title="YouTube video player" width="560" height="315" src="https://www.youtube.com/embed/CJny8XlzcDU?autohide=1&amp;autoplay=1&amp;controls=0&amp;enablejsapi=1&amp;iv_load_policy=3&amp;loop=0&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;showinfo=0&amp;wmode=opaque&amp;origin=https%3A%2F%2Fwww.devonstank.com&amp;widgetid=1" class="background-video2 ready" style="width: 1310.22px; height: 737px;"></iframe>
+      <iframe id="player" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media" title="YouTube video player" width="560" height="315" src="https://www.youtube.com/embed/CJny8XlzcDU?autohide=1&amp;autoplay=1&amp;controls=0&amp;enablejsapi=1&amp;iv_load_policy=3&amp;loop=0&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;showinfo=0&amp;wmode=opaque&amp;origin=https%3A%2F%2Fwww.devonstank.com&amp;widgetid=1" class="background-video2 ready" style="width: 100%; height: 737px;"></iframe>
       <!-- <img class="background-video2" src="../../../static/images/bg_video.jpeg" width="560" height="315" style="width: 1310.22px; height: 737px;"> -->
 
       <navBar></navBar>
 
       <div class="nav-intro" style="margin-top: 164px">
-        <h2 style="color: white; font-style:italic; font-family:adobe-garamond-pro;">I'm here to build best chatbots!!!</h2>
+        <h2 style="color: white; font-style:italic; font-family:'Cormorant Garamond';">I'm here to build best chatbots!!!</h2>
         <h1 style="color: white; text-transform:uppercase; font-size: 72px; "><b>Let's build something amazing together</b></h1>
         <button href="" class="white-button">WATCH VIDEO</button>
       </div>
@@ -18,7 +18,7 @@
 
     <div class="project-bar">
       <div class="project-bar-contents">
-        <h2 style="font-size:42px; color: black; font-style:normal; font-family:adobe-garamond-pro; text-rendering: optimizeLegibility;"> These are my latest projects!! </h2>
+        <h2 style="font-size:42px; color: black; font-style:normal; font-family:'Cormorant Garamond'; text-rendering: optimizeLegibility;"> These are my latest projects!! </h2>
         <div class="project-items">
           <imgCaption :projectId="0" :imgSrc="'@/../static/images/thumbnail/thumbnail-amap.001.jpeg'" :imgWidth="280" :imgHeight="280" :captionGroup="'NaturalLanguageProcessing'" :captionTitle="'Amap Learning2Rank'">
           </imgCaption>
@@ -34,9 +34,15 @@
 
         </div>
         <div class="btn-container">
-        <router-link tag="button" :to="{name: 'portfolio', params: {}}" class="black-button">WATCH PROJECT</router-link>
+        <router-link tag="button" :to="{name: 'portfolio', params: {}}" class="black-button">WATCH MORE PROJECTS</router-link>
         </div>
       </div>
+    </div>
+
+    <div class="contact-bar" >
+      <!-- <h2 id="contacttag">123</h2> -->
+      <!-- <a href="#contacttag">tag</a> -->
+      <h2 id="contacttag" style="color: white; font-style:italic; font-family:adobe-garamond-pro;">Please contact me!</h2>
     </div>
 
   </div>
@@ -171,10 +177,11 @@ export default {
 }
 
 .project-bar {
-  position: absolute;
+  position: relative;
   top: 780px;
   left: 0;
   width: 100%;
+  /*height: 588px;*/
   background-color: #edeeef;
 }
 
@@ -191,6 +198,16 @@ export default {
   justify-content: space-between;
   margin-top: 25px;
   position: relative;
+}
+
+.contact-bar {
+  display: block;
+  position: absolute;
+  top: 1350px;
+  left: 0px;
+  width: 100%;
+  height: 415px;
+  background-color: #26262a; 
 }
 
 </style>

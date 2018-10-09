@@ -12,9 +12,10 @@
           <nav>
             <div :class="'nav-bar-links-inner-' + colorTheme">
               <router-link tag="a" :to="{name: 'main'}">Home</router-link>
-              <router-link tag="a" :to="{name: 'main'}">Resume/CV</router-link>
+              <router-link tag="a" :to="{name: 'resume'}">Resume/CV</router-link>
               <router-link tag="a" :to="{name: 'portfolio'}">Portfolio</router-link>
-              <router-link tag="a" :to="{name: 'main'}">Contact</router-link>
+              <!-- <router-link tag="a" :to="{name: 'contact'}">Contact</router-link> -->
+              <a href="#contacttag">Contact</a>
             </div>
           </nav>
         </div>

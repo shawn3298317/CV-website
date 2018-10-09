@@ -139,12 +139,12 @@ export default {
     /*width: 350px;
     height: 350px;*/
     z-index: 1;
-    opacity: 0.55;
+    opacity: 0.65;
     background-color: black;
   }
 
   .ctnr:hover .ctnr-mask {
-    opacity: 0.35;
+    opacity: 0.25;
     transition: .5s opacity ease-in-out, .5s background-color ease-in-out;
     background-color: black;
   }

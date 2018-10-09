@@ -2,8 +2,9 @@
     <div :class="'annouce-bar-' + colorTheme">
       <div class="annouce-bar-text">
         <p></p>
-        <p>If you haven't already, check out my latest Vlog episode (EP09 - Get Out Of The Office).
-          <a target="_blank" href="https://youtu.be/QmNHsJgs9kQ">Watch Video</a>
+        <p>Hi, there! This is Wei-Hsiang, Lin's personal website! I can be reached at 
+          <!-- <router-link tag="a" :to="{name: 'contact', param: {}}">here</router-link>. -->
+          <a href="#contacttag">here</a>
         </p>
       </div>
     </div>

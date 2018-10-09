@@ -9,7 +9,7 @@
         <!-- <div class="spacer-block"/> -->
 
         <h2 class="project-title"> {{project_info.projectName}}</h2>
-        <h2 class="project-intro">{{project_info.intro}}</h2>
+        <h2 class="project-intro" v-for="paragraph in project_info.intro">&emsp;{{paragraph}}</h2>
         <!-- <button href="" class="black-button">WATCH VIDEO</button> -->
         
 
@@ -123,10 +123,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
   letter-spacing: 0.015em;
+  padding-bottom: 20px;
 }
 
 .project-intro {
-  font-size:24px;
+  margin-top: 30px;
+  font-size:22px;
   color: black;
   font-style:normal;
   font-family: 'Lato';
