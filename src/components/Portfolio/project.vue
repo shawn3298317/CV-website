@@ -9,7 +9,9 @@
         <!-- <div class="spacer-block"/> -->
 
         <h2 class="project-title"> {{project_info.projectName}}</h2>
-        <h2 class="project-intro" v-for="paragraph in project_info.intro">&emsp;{{paragraph}}</h2>
+        <h2 class="project-intro" v-for="paragraph in project_info.intro">
+          <vueMarkdown>{{paragraph}}</vueMarkdown>
+        </h2>
         <!-- <button href="" class="black-button">WATCH VIDEO</button> -->
         
 
@@ -34,6 +36,7 @@ import imgCaption from '@/components/ImageCaption/imageCaption'
 import annouceBar from '@/components/Main/annouceBar'
 import navBar from '@/components/Main/navBar'
 import imageCarousel from '@/components/ImageCaption/imageCarousel'
+import vueMarkdown from 'vue-markdown'
 
 export default {
   name: 'project',
@@ -41,7 +44,8 @@ export default {
     imgCaption,
     annouceBar,
     navBar,
-    imageCarousel
+    imageCarousel,
+    vueMarkdown
   },
   methods: {
     getProjectInfoFromAsset () {
@@ -96,7 +100,7 @@ export default {
   position: absolute;
   top: 138px;
   width: 100%;
-  height: 1500px;
+  /*height: 1500px;*/
   padding: 80px 60px;
   /*box-sizing: border-box;*/
   /*width: 83.33%;

@@ -2,7 +2,7 @@
   <div class="ctnr" :style="styleSize">
     <div :class="getClassByAnimationType()" :style="styleSize">
       <div class="ctnr-caption-holder">
-        <h2 style="color: white; font-size: 1.5em; font-style:italic; font-family:adobe-garamond-pro;">{{captionGroup}}</h2>
+        <h2 style="color: white; font-size: 1.65em; font-style:italic; font-family:'adobe-garamond-pro-regular';">{{captionGroup}}</h2>
         <!-- <h1 style="color: white; font-size: 2em; text-transform:uppercase; font-size:"><b>{{captionTitle}}</b></h1> -->
         <h1 style="color: white; font-size: 2em; font-size:"><b>{{captionTitle}}</b></h1>
         <!-- <button class="caption-button">WATCH PROJECT</button> -->
@@ -181,6 +181,16 @@ export default {
 
   .caption-button:focus {
     outline: none;
+  }
+
+  @font-face {
+    font-family: 'adobe-garamond-pro-italic';
+    src: url('../../../assets/fonts/adobe-garamond-pro-italic.ttf');
+  }
+
+  @font-face {
+    font-family: 'adobe-garamond-pro-regular';
+    src: url('../../../assets/fonts/adobe-garamond-pro-regular.ttf');
   }
 
 </style>

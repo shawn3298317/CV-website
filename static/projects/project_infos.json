@@ -18,7 +18,7 @@
 		"thumbNail": "thumbnail-her.png",
 		"projectName": "Her - Office Assistant Dialogue System",
 		"intro": [
-			"HER is a multi-turn task-oriented dialogue system that helps you manage your work callender. She can understand whether a user needs to create a new callender event, reschedule an event, or find a specific time slot that is convenient for a group of people:"
+			"__HER__ is a multi-turn task-oriented dialogue system that helps you manage your work callender. She can understand whether a user needs to create a new callender event, reschedule an event, or find a specific time slot that is convenient for a group of people. HER serves as an internal platform that allow firm employee to manage their schedule simply by texting on Wechat, and is able to handle over __70%+__ of work schedule arrangements without human intervening."
 		],
 		"info": {
 			"pics": [],
