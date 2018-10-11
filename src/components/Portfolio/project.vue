@@ -8,7 +8,8 @@
       <div class="project-ctnr-pd">
         <!-- <div class="spacer-block"/> -->
 
-        <h2 class="project-title"> {{project_info.projectName}}</h2>
+        <h2 class="project-title">{{project_info.projectName}}</h2>
+        <div style="width:100%; height:20px;"></div>
         <h2 class="project-intro" v-for="paragraph in project_info.intro">
           <vueMarkdown>{{paragraph}}</vueMarkdown>
         </h2>
@@ -118,16 +119,19 @@ export default {
 }
 
 .project-title {
-  font-size:55px;
+  font-size:5em;
   color: black;
   font-style:normal;
   /*font-family: adobe-garamond-pro;*/
   font-family: 'Cormorant Garamond';
   text-align: left;
   -webkit-font-smoothing: antialiased;
+  /*text-decoration: underline;*/
+  border-bottom: 1px solid black;
+  /*margin-bottom: -20px;*/
   font-weight: 400;
-  letter-spacing: 0.015em;
-  padding-bottom: 20px;
+  letter-spacing: 0.0em;
+  /*padding-bottom: 20px;*/
 }
 
 .project-intro {
