@@ -4,7 +4,7 @@
       <div class="ctnr-caption-holder">
         <h2 style="color: white; font-size: 1.65em; font-style:italic; font-family:'adobe-garamond-pro-regular';">{{captionGroup}}</h2>
         <!-- <h1 style="color: white; font-size: 2em; text-transform:uppercase; font-size:"><b>{{captionTitle}}</b></h1> -->
-        <h1 style="color: white; font-size: 2em; font-size:"><b>{{captionTitle}}</b></h1>
+        <h1 style="color: white; font-size: 2em; margin-left:20px; margin-right:20px;"><b>{{captionTitle}}</b></h1>
         <!-- <button class="caption-button">WATCH PROJECT</button> -->
         <!-- <router-link tag="button" :to="'/project/' + projectId" class="caption-button">WATCH PROJECT</router-link> -->
         <router-link tag="button" :to="{name: 'project', params: {project_id: projectId}}" class="caption-button">WATCH PROJECT</router-link>

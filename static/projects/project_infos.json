@@ -33,6 +33,25 @@
 	},
 
 	"2": {
+		"projectGroup": "AdversarialLearning/ImageCaptioning",
+		"thumbNail": "",
+		"projectName": "Towards Diverse Natural and Accurate Image Captioning via BicycleGAN",
+		"intro": [
+			"&nbsp;__HER__ is a multi-turn task-oriented dialogue system that helps you manage your work callender. She can understand whether a user needs to create a new callender event, reschedule an event, or find a specific time slot that is convenient for a group of people. HER serves as an internal platform that allow firm employee to manage their schedule simply by texting on Wechat, and is able to handle over __70%+__ of work schedule arrangements without human intervening."
+		],
+		"info": {
+			"pics": [],
+			"summary": [
+				"Implemented a multi-turn task-oriented chatbot that arrange calendar and schedule updates.",
+				"Designed Spoken Language Understanding, Dialogue State Tracking, Dialogue Policy Optimization modules for the dialogue system.",
+				"SLU: Applied Hirarchical-Attention-Network model for intent detection, and Bi-Direction-LSTM+CRF model for slot filling.",
+				"DST/DPO: Designed Finate-State-Machine to keep track of semantic role frame for tracking dialogues.",
+				"Designed Scala/Play backend service to host the dialogue manager."
+			]
+		}
+	},
+
+	"3": {
 		"projectGroup": "NaturalLanguageProcessing",
 		"thumbNail": "",
 		"projectName": "Semi-Automatic Construction of Domain-Specific Dictionary Via Hashtags Discovery",
@@ -52,7 +71,7 @@
 		}
 	},
 
-	"3": {
+	"4": {
 		"projectGroup": "NaturalLanguageProcessing",
 		"thumbNail": "",
 		"projectName": "Stock Forum Sentiment Analysis System",
@@ -71,7 +90,7 @@
 		}
 	},
 
-	"4": {
+	"5": {
 		"projectGroup": "NaturalLanguageProcessing",
 		"thumbNail": "",
 		"projectName": "PineappleCake - Deep Learning NLP Toolkit",
@@ -86,7 +105,7 @@
 		}
 	},
 
-	"5": {
+	"6": {
 		"projectGroup": "NaturalLanguageProcessing",
 		"thumbNail": "",
 		"projectName": "Xinya - Love Song Lyrics Generator",
