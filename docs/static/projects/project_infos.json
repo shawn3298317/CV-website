@@ -33,13 +33,29 @@
 	},
 
 	"2": {
+		"projectGroup": "AdversarialLearning/ImageCaptioning",
+		"thumbNail": "",
+		"projectName": "Towards Diverse Natural and Accurate Image Captioning via BicycleGAN",
+		"intro": [
+			"Image captioning, despite the substantial progress in recent years due to deep learning algorithms, are still far from being perfect. Caption sentences produced by methods like MLE (Maximum Likelihood Estimation), are often overly rigid and lack in variability due to its constrained optimization function. This principle encourages high resemblance to the ground-truth captions, while suppressing other semantically equivalant descriptions.",
+			"Some research proposed adversarial learning methods (e.g. conditional-GAN) to generate greater variety of image captions. However, problem of these sort of methods lies in that they achieve better variability at the cost of sacrificing conventional evaluation metrics such as BLEU and ROUGE.",
+
+			"This project is one of my side projects, it was done during time in Sinovation Venture. And in this project, I tried to explore an alternative approach to guarantee conventional evaluation metrics and caption diversity at the same time. Specifically, I propose a new framework based on Bicycle Generative Adversarial Networks (BicycleGAN) and Contrastive Learning, which jointly learns a generator to produce captions conditioned on images, an discriminator to asses how well a caption fits the visual content, and an encoder to ensure the stability of diversified caption generator. Meanwhile, constrative loss keeps the generator learn better than a reference caption model. It is noteworthy that training a sequence generator is nontrivial. I overcame the difficulty by Policy Gradient, and further solved GAN's vanishing gradient problem via RankGAN, a strategy that stabilize discriminator's expected value. Proposed method was tested on Flickr30k dataset, with 0.059(26%) improvement on BLEU-3 and similar caption diversity comparing to C-GAN baseline."
+		],
+		"info": {
+			"pics": [],
+			"summary": [
+			]
+		}
+	},
+
+	"3": {
 		"projectGroup": "NaturalLanguageProcessing",
 		"thumbNail": "",
 		"projectName": "Semi-Automatic Construction of Domain-Specific Dictionary Via Hashtags Discovery",
 		"intro": [
-			"The importance of constructing a __Domain-Specific Dictionary__ lies in that \"languange\" itself is a keep evolving incorporeal, as the meaning of terms shifts gradually from time to time, there are plenty of reasons why we should keep track of some urban slangs or professional terminology in a specific domain. During the time in Sinovation Venture, we noticed that the change of term meanings or some new domain specific terms often come from some social platforms like Weibo, Twitter, you name it. (i.e. Chances are a new word in **Urban Dictionary** dates back to a couple of tweets from some aonymous users.)",
-			" In this work, we invented a way to semi-automatically construct a domain-specific dictionary on Weibo (Chinese Twitter). Our method based on Chinese weibo’s structure and clustering algorithm other than traditional document collection method. As for task-based evaluation of the domain dictionary, we categorized blogs by assigning a domain for each word in a blog article and categorizing it as the most dominant domain. Thus, we dynamically estimated the domains of unknown words, (i.e., xxx listed in the domain dictionary), resulting in our blog categorization achieving an accuracy of 94.0% (564/600). Moreover, the domain estimation technique for unknown words achieved an accuracy of 76.6% (383/500)",
-			""
+			"The importance of constructing a __Domain-Specific Dictionary__ lies in that \"languange\" itself is a keep evolving incorporeal, as the meaning of terms shifts gradually from time to time, there are plenty of reasons why we should keep track of some urban slangs or professional terminology in a specific domain. During the time in Sinovation Venture, we noticed that the change of term meanings and some new domain specific terms often come from some social platforms like Weibo and Twitter. (i.e. Chances are a new word in **Urban Dictionary** dates back to a couple of tweets from some aonymous users.) ",
+			"In this work, we found a way to semi-automatically construct a domain-specific dictionary on Weibo (Chinese Twitter). We were able to achieve a 94% f1-score on domain term classification, and 76.6% accuarcy on newly-formed domain-specific term discovery."
 		],
 		"info": {
 			"pics": [],
@@ -52,7 +68,7 @@
 		}
 	},
 
-	"3": {
+	"4": {
 		"projectGroup": "NaturalLanguageProcessing",
 		"thumbNail": "",
 		"projectName": "Stock Forum Sentiment Analysis System",
@@ -71,11 +87,11 @@
 		}
 	},
 
-	"4": {
+	"5": {
 		"projectGroup": "NaturalLanguageProcessing",
 		"thumbNail": "",
 		"projectName": "PineappleCake - Deep Learning NLP Toolkit",
-		"intro": "Here are 2 sentences of introduction for this project.",
+		"intro": "",
 		"info": {
 			"pics": [],
 			"summary": [
@@ -86,7 +102,7 @@
 		}
 	},
 
-	"5": {
+	"6": {
 		"projectGroup": "NaturalLanguageProcessing",
 		"thumbNail": "",
 		"projectName": "Xinya - Love Song Lyrics Generator",
@@ -111,7 +127,7 @@
 		"info": {
 			"pics": [],
 			"summary": [
-				"point 1: xxxxxxxxxxxxxxxxxxxx",
+				"",
 				"point 2: xxxxxxxxxxxxxxxxxxxx",
 				"point 3: xxxxxxxxxxxxxxxxxxxx",
 				"point 4: xxxxxxxxxxxxxxxxxxxx"
