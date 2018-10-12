@@ -2,8 +2,8 @@
 	"0": {
 		"projectGroup": "NaturalLanguageProcessing",
 		"thumbNail": "thumbnail-amap.001.jpeg",
-		"projectName": "Amap Learning2Rank",
-		"intro": ["Here are 2 sentences of introduction for this project.This is the first sentence, blah blah blah. And this is the second sentence. Yeah!"],
+		"projectName": "Alibaba Inc. - Learning2Rank on Maps",
+		"intro": ["__Alibaba Inc.__ has the largest mapping and navigation service in China -- Amap (Chinese Google Map...), which hosts over __100 millions+__ active users on a daily basis. I participated in optimizing ranking algorithms of search engine under map/navigation scenario. "],
 		"info": {
 			"pics": [],
 			"summary": [
@@ -18,7 +18,7 @@
 		"thumbNail": "thumbnail-her.png",
 		"projectName": "Her - Office Assistant Dialogue System",
 		"intro": [
-			"&nbsp;__HER__ is a multi-turn task-oriented dialogue system that helps you manage your work callender. She can understand whether a user needs to create a new callender event, reschedule an event, or find a specific time slot that is convenient for a group of people. HER serves as an internal platform that allow firm employee to manage their schedule simply by texting on Wechat, and is able to handle over __70%+__ of work schedule arrangements without human intervening."
+			"&nbsp;__HER__ is one of the main projects I participated in Sinovation Venture, it is a multi-turn task-oriented dialogue system that helps you manage your work callender. She can understand whether a user needs to create a new callender event, reschedule an event, or find a specific time slot that is convenient for a group of people. HER serves as an internal platform that allow firm employee to manage their schedule simply by texting on Wechat, and is able to handle over __70%+__ of work schedule arrangements without human intervening."
 		],
 		"info": {
 			"pics": [],
@@ -37,10 +37,10 @@
 		"thumbNail": "",
 		"projectName": "Towards Diverse Natural and Accurate Image Captioning via BicycleGAN",
 		"intro": [
-			"Image captioning, despite the substantial progress in recent years due to deep learning algorithms, are still far from being perfect. Caption sentences produced by methods like MLE (Maximum Likelihood Estimation), are often overly rigid and lack in variability due to its constrained optimization function. This principle encourages high resemblance to the ground-truth captions, while suppressing other semantically equivalant descriptions.",
-			"Some research proposed adversarial learning methods (e.g. conditional-GAN) to generate greater variety of image captions. However, problem of these sort of methods lies in that they achieve better variability at the cost of sacrificing conventional evaluation metrics such as BLEU and ROUGE.",
+			"This project is one of my personal side projects, during reading some of the recent works in some top CV conferences, I came to sparkled with some new ideas, so I spent some time to realize my thoughts:",
+			"Image captioning, despite the substantial progress in recent years due to deep learning algorithms, are still far from being perfect. Caption sentences produced by methods like MLE (Maximum Likelihood Estimation), are often overly rigid and lack in variability due to its constrained optimization function. This principle encourages high resemblance to the ground-truth captions, while suppressing other semantically equivalant descriptions. Some research proposed adversarial learning methods (e.g. conditional-GAN) to generate greater variety of image captions. However, problem of these sort of methods lies in that they achieve better variability at the cost of sacrificing conventional evaluation metrics such as BLEU and ROUGE.",
 
-			"This project is one of my side projects, it was done during time in Sinovation Venture. And in this project, I tried to explore an alternative approach to guarantee conventional evaluation metrics and caption diversity at the same time. Specifically, I propose a new framework based on Bicycle Generative Adversarial Networks (BicycleGAN) and Contrastive Learning, which jointly learns a generator to produce captions conditioned on images, an discriminator to asses how well a caption fits the visual content, and an encoder to ensure the stability of diversified caption generator. Meanwhile, constrative loss keeps the generator learn better than a reference caption model. It is noteworthy that training a sequence generator is nontrivial. I overcame the difficulty by Policy Gradient, and further solved GAN's vanishing gradient problem via RankGAN, a strategy that stabilize discriminator's expected value. Proposed method was tested on Flickr30k dataset, with 0.059(26%) improvement on BLEU-3 and similar caption diversity comparing to C-GAN baseline."
+			"In this project, I experimented an alternative approach to guarantee conventional evaluation metrics and caption diversity at the same time. Specifically, I propose a caption generation framework based on Bicycle Generative Adversarial Networks (BicycleGAN) and Contrastive Learning, which jointly learns a generator to produce captions conditioned on images, a discriminator to asses how well and how natural a generated caption fits the visual content, and an encoder to ensure the stability of diversified caption generator. Meanwhile, constrative loss keeps the generator learn better than a reference caption model. It is noteworthy that training a sequence generator is nontrivial. I overcame the difficulty by Policy Gradient, and further solved GAN's vanishing gradient problem via RankGAN, a strategy that stabilize discriminator's expected value. Proposed method was tested on Flickr30k dataset, with 0.059(26%) improvement on BLEU-3 and similar caption diversity comparing to C-GAN baseline."
 		],
 		"info": {
 			"pics": [],
@@ -54,7 +54,7 @@
 		"thumbNail": "",
 		"projectName": "Semi-Automatic Construction of Domain-Specific Dictionary Via Hashtags Discovery",
 		"intro": [
-			"The importance of constructing a __Domain-Specific Dictionary__ lies in that \"languange\" itself is a keep evolving incorporeal, as the meaning of terms shifts gradually from time to time, there are plenty of reasons why we should keep track of some urban slangs or professional terminology in a specific domain. During the time in Sinovation Venture, we noticed that the change of term meanings and some new domain specific terms often come from some social platforms like Weibo and Twitter. (i.e. Chances are a new word in **Urban Dictionary** dates back to a couple of tweets from some aonymous users.) ",
+			"This project is an experimental project done with some of my colleagues in Sinovation Venture. We were trying to come up with a way to automatically construct domain dictionary without any human intervention. The importance of constructing a __Domain-Specific Dictionary__ lies in that \"languange\" itself is a keep evolving incorporeal, as the meaning of terms shifts gradually from time to time, there are plenty of reasons why we should keep track of some urban slangs or professional terminology in a specific domain. During the time, we noticed that the change of term meanings and some new domain specific terms often come from some social platforms like Weibo and Twitter. (i.e. Chances are a new word in **Urban Dictionary** dates back to a couple of tweets from some aonymous users.) ",
 			"In this work, we found a way to semi-automatically construct a domain-specific dictionary on Weibo (Chinese Twitter). We were able to achieve a 94% f1-score on domain term classification, and 76.6% accuarcy on newly-formed domain-specific term discovery."
 		],
 		"info": {
@@ -106,14 +106,15 @@
 		"projectGroup": "NaturalLanguageProcessing",
 		"thumbNail": "",
 		"projectName": "Xinya - Love Song Lyrics Generator",
-		"intro": "Here are 2 sentences of introduction for this project.",
+		"intro": [
+			"DeeCamp was an AI summer camp for college students hosted by Sinovation Venture at 2017. I was assigned as one of the mentors for the NLP group in DeeCamp. __Xinya__ was the love song lyrics generator built by me and the team I tutored. "
+		],
 		"info": {
 			"pics": [],
 			"summary": [
-				"point 1: xxxxxxxxxxxxxxxxxxxx",
-				"point 2: xxxxxxxxxxxxxxxxxxxx",
-				"point 3: xxxxxxxxxxxxxxxxxxxx",
-				"point 4: xxxxxxxxxxxxxxxxxxxx"
+				"Participated in designing a GAN + Auto-encoder sequence generator for generating love song lyric",
+				"Trained GAN + Auto-encoder model on 1 million+ web-crawled love songs from various Chinese music websites",
+				"Evaluated beam-decoded lyrics by n-gram languange models, neural language models, and human judges."
 			]
 		}
 	},
@@ -140,7 +141,7 @@
 		"thumbNail": "thumbnail-DSPUR.png",
 		"projectName": "D-SPUR",
 		"intro": [
-			"Here are 2 sentences of introduction for this project. This is the first sentence, blah blah blah. And this is the second sentence. Yeah!"
+			"D-SPUR was the robot vehicle which me and 4 of my college classmates built during **2016 NVIDIA Embedded Robot Challenge**. Contestants were asked to design a robot vehicle with an embedded robot arm that has the ability to (1) achieve autonomous driving on a given map, (2) detect and open door knobs with robot arms, and (3) recognize the projected CIFAR-10 picture on the wall with deep learning algorithms. At the end, our team completed all the challenges with our bot and won the __Best Innovation Award__."
 		],
 		"info": {
 			"pics": [
@@ -196,15 +197,13 @@
 		"thumbNail": "thumbnail-alphabot.png",
 		"projectName": "AlphaBot",
 		"intro": [
-			"Here are 2 sentences of introduction for this project. This is the first sentence, blah blah blah. And this is the second sentence. Yeah!"
+			"AlphaBot was the humanoid which me and 2 of my classmates built to compete for __2016 InnovateAsia SoC Design Contest__. Contestant were asked to show creativity and IC-design specialty by building an FPGA application using Altera DE2-115 FPGA board. Our team chose to build a biped humanoid that was able to transform in to a vehicle and recognize hand written digits. We won the **Silver Medal Prize** and **Wurth Electronic Prize** at the end."
 		],
 		"info": {
 			"pics": [],
 			"summary": [
 				"Designed and implemented deep neural network hardware architecture (Convolutional Neural Network) on Altera FPGA board.",
-				"Achieved 93% recognition accuracy on MNIST hand-written digits datasets and 90%+ accuracy on real world data collected through embedded camera.",
-				"",
-				""
+				"Achieved 93% recognition accuracy on MNIST hand-written digits datasets and 90%+ accuracy on real world data collected through embedded camera."
 			],
 			"video": "https://www.youtube.com/embed/395eBJpKtUE"
 		}
@@ -215,15 +214,14 @@
 		"thumbNail": "",
 		"projectName": "Improving RNN-Language-Model Leveraging Common Sense Knowledge",
 		"intro": [
-			"Here are 2 sentences of introduction for this project. This is the first sentence, blah blah blah. And this is the second sentence. Yeah!"
 		],
 		"info": {
 			"pics": [],
 			"summary": [
-				"point 1: xxxxxxxxxxxxxxxxxxxx",
-				"point 2: xxxxxxxxxxxxxxxxxxxx",
-				"point 3: xxxxxxxxxxxxxxxxxxxx",
-				"point 4: xxxxxxxxxxxxxxxxxxxx"
+				"Enhanced efficiency of recurrent-neural-net language models by utilizing common-sense knowledge graphs.",
+				"Designed and implemented algorithms to extract meta-path features from common-sense knowledge graph, and applied meta-path features in language model training stage.",
+				"Trained and validated new proposed model on Switchboard benchmark dataset",
+				"Achieved 50% drop on perplexity 1.5% improvement on word-error-rate."
 			]
 		}
 	}
