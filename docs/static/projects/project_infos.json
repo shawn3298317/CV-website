@@ -3,12 +3,13 @@
 		"projectGroup": "NaturalLanguageProcessing",
 		"thumbNail": "thumbnail-amap.001.jpeg",
 		"projectName": "Alibaba Inc. - Learning2Rank on Maps",
-		"intro": ["__Alibaba Inc.__ has the largest mapping and navigation service in China -- Amap (Chinese Google Map...), which hosts over __100 millions+__ active users on a daily basis. I participated in optimizing ranking algorithms of search engine under map/navigation scenario. "],
+		"intro": ["__Alibaba Inc.__ has the largest mapping and navigation service in China -- Amap (Chinese Google Map...), which hosts over __100 millions+__ active users per day. I participated in optimizing the natural language understanding modules and ranking algorithms of Amap's search engine under map/navigation scenario. "],
 		"info": {
 			"pics": [],
 			"summary": [
-				"Implemented pair-wise ranking algorithms (gbdt & kernel-based SVMs) for search and recommendation engine under map scenario.",
-				"Deployed pair-wise ranking algorithms on Amap platform with 150+ million DAUs, acheived 2% CTR improvement"
+				"Improved natural language understanding module for Amap map navigation voice assistant with deep-learning algorithms.",
+				"Implemented gradient boosted decision tree, kernel-based SVMs, Wide&Deep Net for search and recommendation engine under map/navigation scenario.",
+				"Launched learning to rank algorithms & query understanding algorithms on Amap platform, Improved CTR (click through rate) by 2%, and \"average browsing time before first click\" by 1.23 second."
 			]
 		}
 	},
@@ -18,7 +19,7 @@
 		"thumbNail": "thumbnail-her.png",
 		"projectName": "Her - Office Assistant Dialogue System",
 		"intro": [
-			"&nbsp;__HER__ is one of the main projects I participated in Sinovation Venture, it is a multi-turn task-oriented dialogue system that helps you manage your work callender. She can understand whether a user needs to create a new callender event, reschedule an event, or find a specific time slot that is convenient for a group of people. HER serves as an internal platform that allow firm employee to manage their schedule simply by texting on Wechat, and is able to handle over __70%+__ of work schedule arrangements without human intervening."
+			"&nbsp;__HER__ is one of the main projects I participated in Sinovation Venture, it is a multi-turn task-oriented dialogue system that helps you manage your work callender. She can understand whether a user needs to create a new callender event, reschedule an event, or find a specific time slot that is convenient for a group of people. HER serves as an internal platform that allow firm employee to manage their schedule simply by texting on Wechat, and is able to handle over __70%+__ of work schedule arrangements without human intervention."
 		],
 		"info": {
 			"pics": [],
@@ -40,7 +41,7 @@
 			"This project is one of my personal side projects, during reading some of the recent works in some top CV conferences, I came to sparkled with some new ideas, so I spent some time to realize my thoughts:",
 			"Image captioning, despite the substantial progress in recent years due to deep learning algorithms, are still far from being perfect. Caption sentences produced by methods like MLE (Maximum Likelihood Estimation), are often overly rigid and lack in variability due to its constrained optimization function. This principle encourages high resemblance to the ground-truth captions, while suppressing other semantically equivalant descriptions. Some research proposed adversarial learning methods (e.g. conditional-GAN) to generate greater variety of image captions. However, problem of these sort of methods lies in that they achieve better variability at the cost of sacrificing conventional evaluation metrics such as BLEU and ROUGE.",
 
-			"In this project, I experimented an alternative approach to guarantee conventional evaluation metrics and caption diversity at the same time. Specifically, I propose a caption generation framework based on Bicycle Generative Adversarial Networks (BicycleGAN) and Contrastive Learning, which jointly learns a generator to produce captions conditioned on images, a discriminator to asses how well and how natural a generated caption fits the visual content, and an encoder to ensure the stability of diversified caption generator. Meanwhile, constrative loss keeps the generator learn better than a reference caption model. It is noteworthy that training a sequence generator is nontrivial. I overcame the difficulty by Policy Gradient, and further solved GAN's vanishing gradient problem via RankGAN, a strategy that stabilize discriminator's expected value. Proposed method was tested on Flickr30k dataset, with 0.059(26%) improvement on BLEU-3 and similar caption diversity comparing to C-GAN baseline."
+			"In this project, I experimented an alternative approach to guarantee conventional evaluation metrics and caption diversity at the same time. Specifically, I propose a caption generation framework based on Bicycle Generative Adversarial Networks (BicycleGAN) and Contrastive Learning, which jointly learns a generator to produce captions conditioned on images, a discriminator to asses how well and how natural a generated caption fits the visual content, and an encoder to ensure the stability of diversified caption generator. Meanwhile, constrative loss keeps the generator learn better than a reference caption model. It is noteworthy that training a sequence generator is nontrivial. I overcame the difficulty by Policy Gradient, and further solved GAN's vanishing gradient problem via RankGAN, a strategy that stabilize discriminator's expected value. Proposed method was tested on Flickr30k dataset, with __0.059(26%)__ improvement on BLEU-3 and similar caption diversity comparing to the conditional-GAN baseline."
 		],
 		"info": {
 			"pics": [],
@@ -60,10 +61,6 @@
 		"info": {
 			"pics": [],
 			"summary": [
-				"point 1: xxxxxxxxxxxxxxxxxxxx",
-				"point 2: xxxxxxxxxxxxxxxxxxxx",
-				"point 3: xxxxxxxxxxxxxxxxxxxx",
-				"point 4: xxxxxxxxxxxxxxxxxxxx"
 			]
 		}
 	},
@@ -124,14 +121,12 @@
 		"projectGroup": "DistributedSystem/IC-Design",
 		"thumbNail": "",
 		"projectName": "Map/Reduce FPGA Accelerator",
-		"intro": "Here are 2 sentences of introduction for this project.",
+		"intro": ["I interned at WASAI Technology during senior year at college. WASAI Technology is a company that aimed to provide better accelerating solutions to distributed computing systems like Hadoop and Hive. They offer specially designed FPGAs called BPU (Big-Data Processing Unit) to accelerate the bandwidth & throughput of Hadoop clusters, and speed up the average computation speed by 5x ~ 10x."
+		],
 		"info": {
 			"pics": [],
 			"summary": [
-				"",
-				"point 2: xxxxxxxxxxxxxxxxxxxx",
-				"point 3: xxxxxxxxxxxxxxxxxxxx",
-				"point 4: xxxxxxxxxxxxxxxxxxxx"
+				""
 			]
 		}
 	},
